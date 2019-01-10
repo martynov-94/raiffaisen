@@ -22,7 +22,6 @@ body {
 	flex-wrap: wrap;
 	align-items: flex-start;
 	height: 100%;
-	/*border: 1px solid red;*/
 }
 
 .header {
@@ -36,7 +35,6 @@ body {
 }
 
 .header__choose-lang {
-	/*border: 1px solid black;*/
 	padding: 0;
 	margin: 0;
 	margin-right: -15px;
@@ -52,8 +50,31 @@ body {
 	/*border: 1px solid green;*/
 }
 
+.select-list {
+	position: relative;
+}
+
+.select-list::before {
+	display: block;
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 10px;
+	background-color: 10px;
+	left: -10px;
+}
+
 .select-list__item {
-	line-height: 20px;
+	display: none;
+	text-transform: uppercase;
+	font-family: "Futura New Book Reg", serif; 
+	font-size: 14px;
+	color: rgb(76, 52, 64);
+	margin-top: 8px;
+}
+
+.select-list__item_chosen {
+	display: block;
 }
 
 .content__bank-picture {
@@ -212,23 +233,60 @@ body {
 	color: white;
 }
 
-.buttons-list__btn:active a {
+.buttons-list__btn:hover a {
 	background-color: #6d5b66;
 	color: white;
 	border-color: #6d5b66;
 }
 
 .sidebar__footer {
-	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .sidebar__footer-link {
-	border: 1px solid black;
+	padding: 12px;
+	margin-top: 20px;
+}
+
+.sidebar__footer-link a {
+	border-bottom: 1px dotted #897b84;
+	font-size: 14px;
+	font-family: "Futura New Book Reg", serif;
+	text-decoration: none;
+	color: #4c3440;
+	position: relative;
+	left: 25px;
+}
+
+.sidebar__footer-link a:hover {
+	border-bottom: none;
+	color: rgba(76, 52, 64, 0.5);
+}
+
+.sidebar__footer-link a::before {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 42px;
+	height: 32px;
+	left: -50px;
+	top: -10px;
+	background: url(img/iconpdf.png) no-repeat;
+	background-size: 42px 32px;
+	z-index: 10;
 }
 
 .sidebar__footer-copyright {
-	border: 1px solid green;
+	font-size: 12px;
+	padding: 12px;
+	font-family: "Futura New Book Reg", serif;
+	color: rgba(0, 0, 0, 0.5);
+	margin-bottom: 20px;
 }
+
 
 @font-face {
 	font-family: "Futura New Light Reg";
