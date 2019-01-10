@@ -1,0 +1,10 @@
+mixin content( data )
+  .content
+    .content__bank-picture
+      img(src=data.image_url width=data.image_width height=data.image_height)
+    h1.content__title=data.title
+    .content__about
+      each val, index in data.text
+        p=val
+      p.content__about_promo-text!=data.promo_text
+  block

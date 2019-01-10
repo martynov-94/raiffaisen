@@ -1,3 +1,21 @@
+include build/project.pug
+
+-
+  var current_page = "menu-item_save-and-multiply";
+  var content = {
+    title: "Сохранить и преумножить",
+    image_url: "img/bank.png",
+    image_width: 403,
+    image_height: 550,
+    text: [
+      "Обслуживание в московском офисе Friedrich Wilhelm Raiffeisen сочетает в себе преимущества индивидуального клиентского сервиса в Москве с инвестиционными решениями, разработанными в центральном офисе Группы Райффайзен в Вене.",
+      "Каждый клиент российского офиса Friedrich Wilhelm Raiffeisen получает персонального менеджера в Москве, который осуществляет открытие  и обслуживание инвестиционных счетов в Австрии, а также обеспечивает доступ к международному рынку ценных бумаг через платформы в России и за рубежом.",
+      "Специалисты Friedrich Wilhelm Raiffeisen в Австрии разрабатывают индивидуальные стратегии доверительного управления активами и осуществляют формирование индивидуального портфеля, отвечающего инвестиционным потребностям клиента.",
+      "Friedrich Wilhelm Raiffeisen оказывает брокерские, консультационные и аналитические услуги, предоставляет гибкие депозитные предложения и обслуживает счета в 11 валютах."
+    ],
+    promo_text: "Узнать об инвестиционных решениях Friedrich Wilhelm Raiffeisen <a class='content__about_promo-link' href='#'>в Вене</a>"
+  }
+
 doctype html
 html(lang="ru")
   head
@@ -5,39 +23,12 @@ html(lang="ru")
   body
     .wrapper
       .main
-        header.header
-          .header__site-logo
-            a(href="index.html")
-              img(src="img/logo.svg" width="242")
-          .header__tel-number +7 (495) 662 76 77
-          ul.header__choose-lang.select-list
-            li.select-list__item.select-list__item_chosen Ru
-            li.select-list__item En
-            li.select-list__item De
-        .content
-          .content__bank-picture
-            img(src="img/bank.png" width="403" height="550")
-          h1.content__title Сохранить и преумножить
-          .content__about
-            p
-              | Обслуживание в московском офисе Friedrich Wilhelm Raiffeisen сочетает в себе преимущества индивидуального клиентского 
-              | сервиса в Москве с инвестиционными решениями, разработанными в центральном офисе Группы Райффайзен в Вене.
-            p
-              | Каждый клиент российского офиса Friedrich Wilhelm Raiffeisen получает персонального менеджера в Москве, который осуществляет 
-              | открытие и обслуживание инвестиционных счетов в Австрии, а также обеспечивает доступ к международному рынку ценных бумаг 
-              | через платформы в России и за рубежом. 
-            p
-              | Специалисты Friedrich Wilhelm Raiffeisen в Австрии разрабатывают индивидуальные стратегии доверительного управления активами 
-              | и осуществляют формирование индивидуального портфеля, отвечающего инвестиционным потребностям клиента.
-            p
-              | Friedrich Wilhelm Raiffeisen оказывает брокерские, консультационные и аналитические услуги, предоставляет гибкие депозитные 
-              | предложения и обслуживает счета в 11 валютах. 
-            p.content__about_promo-text Узнать об инвестиционных решениях Friedrich Wilhelm Raiffeisen 
-              a.content__about_promo-link(href="#") в Вене
+        +header()
+        +content( content )
       aside.sidebar
         .sidebar__main
           nav.sidebar__menu.menu
-            li.menu__item
+            li.menu__item( id="menu-item_save-and-multiply" )
               a(href="#") Сохранить и преумножить
             li.menu__item
               a(href="#") Получить финансирование
