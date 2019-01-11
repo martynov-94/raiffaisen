@@ -24,10 +24,10 @@ $DESKTOP_1600: 1600px;
  */
 .HEADER-LANG-ITEM {
   font-family: $FuturaNewBook;
-  font-size: 18px;
+  font-size: 12px;
   @include DESKTOP_1600() {
-    font-size: 21px;
-    line-height: 27px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 /**
@@ -81,8 +81,8 @@ $DESKTOP_1600: 1600px;
   font-family: $FuturaNewLight;
   font-size: 18px;
   @include DESKTOP_1600() {
-    font-size: 21px;
-    line-height: 27px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 /**

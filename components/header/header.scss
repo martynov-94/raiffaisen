@@ -1,13 +1,25 @@
 .header {
 	display: flex;
 	padding: 50px;
+
 	align-items: flex-start;
+
+	&__site-logo {
+		margin-right: auto;
+	}
 
 	&__tel-number {
 		@extend .HEADER-PHONE;
+
+		padding: 0;
 	}
 
 	&__choose-lang {
-		@extend .HEADER-LANG-ITEM;
+		margin: 0;
+		margin-right: -15px;
+		margin-left: 60px;
+		padding: 0;
+
+		list-style: none;
 	}
 }

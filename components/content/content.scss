@@ -1,33 +1,55 @@
 .content {
+  display: flex;
+  height: 100%;
 
-  // font-size: 20px;
+  flex-flow: column wrap;
+  align-items: flex-start;
+
+  overflow: hidden;
+
+  &__bank-picture {
+    flex-basis: 100%;
+  }
 
   &__title {
     @extend .CONTENT-TITLE;
+
+    font-weight: normal;
     color: $TEXT-COLOR;
   }
 
   &__about {
     @extend .CONTENT-TEXT;
+    width: 50%;
+    margin-right: 330px;
+    padding: 0;
 
+    column-count: 2;
+    column-gap: 50px;
+    
     &_promo-text {
       color: $PROMO-TEXT-COLOR;
     }
 
     &_promo-link {
-      color: $PROMO-TEXT-COLOR;
-      text-decoration: none;
       position: relative;
+
+      color: $PROMO-TEXT-COLOR;
+      
+      text-decoration: none;
 
       &::before {
         position: absolute;
-        content: "";
         bottom: 5%;
         left: 0;
+
         width: 100%;
         height: 2px;
+
         background-image: linear-gradient(#f2f1f1, $PROMO-TEXT-COLOR);
         background-color: $PROMO-TEXT-COLOR;
+
+        content: "";
       }
 
       &::after {

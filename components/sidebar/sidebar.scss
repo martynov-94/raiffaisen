@@ -1,40 +1,87 @@
 .sidebar {
-  min-width: 292px;
   display: flex;
-  flex-direction: column;
-  background-color: #f2f1f1;
+  min-width: 292px;
   margin: 0;
 
+  background-color: #f2f1f1;
+
+  flex-direction: column;
+
   &__main {
-    flex-grow: 1;
-    padding: 56px 50px 46px 56px;
     display: flex;
+    padding: 56px 50px 46px 56px;
+
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
   }
 
   &__menu {
-    list-style: none;
     margin: 0;
+
+    list-style: none;
   }
 
   &__buttons {
     margin-top: 10px;
   }
 
+  &__footer {
+    display: flex;
+    
+    background-color: #f9f9f8;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__footer-link {
     @extend .DOWNLOAD-PDF;
+    
+    margin-top: 20px;
+    padding: 12px;
 
     a {
-      border-bottom: 1px dotted #897b84;
-      text-decoration: none;
-      color: $TEXT-COLOR;
       position: relative;
       left: 25px;
+
+      color: $TEXT-COLOR;
+
+      border-bottom: 1px dotted #897b84;
+
+      text-decoration: none;
+
+      &:hover {
+        color: rgba(76, 52, 64, 0.5);
+
+        border-bottom: none;
+      }
+
+      &::before {
+        position: absolute;
+        top: -10px;
+        left: -50px;
+        z-index: 10;
+
+        display: block;
+        width: 42px;
+        height: 32px;
+        
+        background: url("img/iconpdf.png") no-repeat;
+        background-size: 42px 32px;
+        
+        content: "";
+      }
     }
   }
 
   &__footer-copyright {
     @extend .COPYRIGHT;
+    
+    margin-bottom: 20px;
+    padding: 12px;
+    
+    color: rgba(0, 0, 0, 0.5);    
   }
 }

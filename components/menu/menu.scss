@@ -1,32 +1,52 @@
 .menu {
   &__item {
-    
+    margin-bottom: 26px;
+
+    &_break-line {
+      width: 65px;
+      height: 1px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+      
+      background-color: #d7d3d5;
+    }
+
     a {
       @extend .MAIN-MENU-ITEM;
-      color: $TEXT-COLOR;
-      text-decoration: none;
-      position: relative;
-      z-index: 2;
 
+      position: relative;
+
+      color: $TEXT-COLOR;
+      
+      text-decoration: none;
+      
       &:hover {
         color: $TEXT-HOVERED-COLOR;
       }
 
       &:active {
         @extend .MAIN-MENU-ITEM-ACTIVE;
-        opacity: 0.5;
 
         &::before {
           position: absolute;
-          content: "";
           bottom: -1px;
           left: -5%;
+
           width: 110%;
           height: 10px;
+
           background-color: rgba(215, 211, 213, 0.5);
+
+          content: "";
           z-index: 1;
         }
       }
+    }
+
+    &_opened a {
+      @extend .MAIN-MENU-ITEM-ACTIVE;
+
+      color: #9f9298;
     } 
   }
 }

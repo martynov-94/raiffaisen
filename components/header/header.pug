@@ -4,9 +4,6 @@ mixin header(content)
       a(href="index.html")
         img(src= "img/logo.svg" width="242")
     .header__tel-number +7 (495) 662 76 77
-    ul.header__choose-lang.select-list
-      li.select-list__item.select-list__item_chosen Ru
-      li.select-list__item En
-      li.select-list__item De
-
+    
+    +select-list()
   block
