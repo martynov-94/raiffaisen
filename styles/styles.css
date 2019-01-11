@@ -46,11 +46,11 @@
 /**
  * пункт главного меню
  */
-.MAIN-MENU-ITEM, .menu__item {
+.MAIN-MENU-ITEM, .menu__item a {
   font-family: "Futura New Book";
   font-size: 24px; }
   @media screen and (min-width: 1600px) {
-    .MAIN-MENU-ITEM, .menu__item {
+    .MAIN-MENU-ITEM, .menu__item a {
       font-size: 31.5px;
       line-height: 36px; } }
 
@@ -207,6 +207,15 @@
     position: absolute;
     content: "\2192";
     margin-left: 5px; }
+
+.menu__item a {
+  color: #4c3440;
+  text-decoration: none;
+  position: relative;
+  z-index: 2; }
+
+.menu__item:active {
+  opacity: 0.5; }
 
 .buttons-list {
   list-style: none;

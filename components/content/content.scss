@@ -4,18 +4,18 @@
 
   &__title {
     @extend .CONTENT-TITLE;
-    color: $COLOR-TEXT;
+    color: $TEXT-COLOR;
   }
 
   &__about {
     @extend .CONTENT-TEXT;
 
     &_promo-text {
-      color: #6d5b66;
+      color: $PROMO-TEXT-COLOR;
     }
 
     &_promo-link {
-      color: #6d5b66;
+      color: $PROMO-TEXT-COLOR;
       text-decoration: none;
       position: relative;
 
@@ -26,8 +26,8 @@
         left: 0;
         width: 100%;
         height: 2px;
-        background-image: linear-gradient(#f2f1f1, #6d5b66);
-        background-color: #6d5b66;
+        background-image: linear-gradient(#f2f1f1, $PROMO-TEXT-COLOR);
+        background-color: $PROMO-TEXT-COLOR;
       }
 
       &::after {

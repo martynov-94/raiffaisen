@@ -17,9 +17,11 @@ include build/project.pug
     promo_text: "Узнать об инвестиционных решениях Friedrich Wilhelm Raiffeisen <a class='content__about_promo-link' href='#'>в Вене</a>"
   }
 
-doctype html
-html(lang="ru")
-  head
-    link(rel='stylesheet', href='styles/styles.css')
-  body
-    +wrapper(content, current_page_index)
++page(content, current_page_index)
+
+//- doctype html
+//- html(lang="ru")
+//-   head
+//-     link(rel='stylesheet', href='styles/styles.css')
+//-   body
+//-     +wrapper(content, current_page_index)

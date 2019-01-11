@@ -1,11 +1,20 @@
 .menu {
-	&__item {
-		@extend .MAIN-MENU-ITEM;
+  &__item {
+    
+    
+    a {
+      @extend .MAIN-MENU-ITEM;
+      color: $TEXT-COLOR;
+      text-decoration: none;
+      position: relative;
+      z-index: 2;
+    }
 
-		&:active {
-			@extend .MAIN-MENU-ITEM-ACTIVE;
-		}
-	}
+    &:active {
+      @extend .MAIN-MENU-ITEM-ACTIVE;
+      opacity: 0.5;
+    }
+  }
 
 
 }
