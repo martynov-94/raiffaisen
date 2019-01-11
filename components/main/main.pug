@@ -1,3 +1,8 @@
-mixin main()
+include ../header/header.pug
+include ../content/content.pug
+
+mixin main(content)
   .main
-    
+    +header()
+    +content( content )
+  block

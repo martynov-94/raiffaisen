@@ -22,9 +22,4 @@ html(lang="ru")
   head
     link(rel='stylesheet', href='styles/styles.css')
   body
-    .wrapper
-      .main
-        +header()
-        +content( content )
-
-      +sidebar( current_page_index )
+    +wrapper(content, current_page_index)

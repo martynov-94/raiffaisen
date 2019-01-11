@@ -1,18 +1,14 @@
 include ../menu/menu.pug
 
-mixin sidebar(current_page)
+mixin sidebar(current_page_index)
   aside.sidebar
 
     .sidebar__main
-      +menu(current_page)
-
-      ul.sidebar__buttons.buttons-list
-        li.buttons-list__btn.buttons-list__btn_opened
-          a(href="#") Raiffesien-Online
-        li.buttons-list__btn
-          a(href="#") R-Dealer
+      +menu(current_page_index)
+      +buttons-list()
 
     footer.sidebar__footer
       .sidebar__footer-link.btn-download
         a(href="#") Скачать &laquo;Услуги FWR&raquo;
       .sidebar__footer-copyright &copy; 2009-2017 АО &laquo;Райффайзенбанк&raquo;
+  block

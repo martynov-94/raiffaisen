@@ -2,22 +2,22 @@
 /**
  * телефон в хедере
  */
-.HEADER-PHONE {
+.HEADER-PHONE, .header__tel-number {
   font-family: "Futura New Light";
   font-size: 24px; }
   @media screen and (min-width: 1600px) {
-    .HEADER-PHONE {
+    .HEADER-PHONE, .header__tel-number {
       font-size: 32px;
       line-height: 27px; } }
 
 /**
  * выбор языка в хедере
  */
-.HEADER-LANG-ITEM {
+.HEADER-LANG-ITEM, .header__choose-lang {
   font-family: "Futura New Book";
   font-size: 18px; }
   @media screen and (min-width: 1600px) {
-    .HEADER-LANG-ITEM {
+    .HEADER-LANG-ITEM, .header__choose-lang {
       font-size: 21px;
       line-height: 27px; } }
 
@@ -35,66 +35,66 @@
 /**
  * основной контент
  */
-.CONTENT-TEXT {
+.CONTENT-TEXT, .content__about {
   font-family: "Futura New Light";
   font-size: 15px; }
   @media screen and (min-width: 1600px) {
-    .CONTENT-TEXT {
+    .CONTENT-TEXT, .content__about {
       font-size: 18px;
       line-height: 27px; } }
 
 /**
  * пункт главного меню
  */
-.MAIN-MENU-ITEM {
+.MAIN-MENU-ITEM, .menu__item {
   font-family: "Futura New Book";
   font-size: 24px; }
   @media screen and (min-width: 1600px) {
-    .MAIN-MENU-ITEM {
+    .MAIN-MENU-ITEM, .menu__item {
       font-size: 31.5px;
       line-height: 36px; } }
 
 /**
  * пункт главного меню при нажатии
  */
-.MAIN-MENU-ITEM-ACTIVE {
+.MAIN-MENU-ITEM-ACTIVE, .menu__item:active {
   font-family: "Futura New Demi";
   font-size: 24px; }
   @media screen and (min-width: 1600px) {
-    .MAIN-MENU-ITEM-ACTIVE {
+    .MAIN-MENU-ITEM-ACTIVE, .menu__item:active {
       font-size: 31.5px;
       line-height: 36px; } }
 
 /**
  * текст внутри кнопки банка
  */
-.BANK-BUTTON {
+.BANK-BUTTON, .buttons-list__btn, .buttons-list__btn_opened {
   font-family: "Futura New Light";
   font-size: 18px; }
   @media screen and (min-width: 1600px) {
-    .BANK-BUTTON {
+    .BANK-BUTTON, .buttons-list__btn, .buttons-list__btn_opened {
       font-size: 21px;
       line-height: 27px; } }
 
 /**
  * скачивание pdf-файла
  */
-.DOWNLOAD-PDF {
+.DOWNLOAD-PDF, .sidebar__footer-link {
   font-family: "Futura New Light";
   font-size: 12px; }
   @media screen and (min-width: 1600px) {
-    .DOWNLOAD-PDF {
+    .DOWNLOAD-PDF, .sidebar__footer-link {
       font-size: 14px;
       line-height: 27px; } }
 
 /**
  * копирайт
  */
-.COPYRIGHT {
+.COPYRIGHT, .sidebar__footer-copyright {
   font-family: "Futura New Light";
   font-size: 10px; }
   @media screen and (min-width: 1600px) {
-    .COPYRIGHT {
+    .COPYRIGHT, .sidebar__footer-copyright {
       font-size: 12px;
       line-height: 27px; } }
 
@@ -119,5 +119,111 @@
   font-weight: 300;
   font-style: normal; }
 
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  background-color: #f9f9f8;
+  height: 860px; }
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 0; }
+
+.sidebar {
+  min-width: 292px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #f2f1f1;
+  margin: 0; }
+  .sidebar__main {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 56px 50px 46px 56px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .sidebar__menu {
+    list-style: none;
+    margin: 0; }
+  .sidebar__buttons {
+    margin-top: 10px; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
 .content__title {
   color: #4c3440; }
+
+.content__about_promo-text {
+  color: #6d5b66; }
+
+.content__about_promo-link {
+  color: #6d5b66;
+  text-decoration: none;
+  position: relative; }
+  .content__about_promo-link::before {
+    position: absolute;
+    content: "";
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f1f1), to(#6d5b66));
+    background-image: -webkit-linear-gradient(#f2f1f1, #6d5b66);
+    background-image: -o-linear-gradient(#f2f1f1, #6d5b66);
+    background-image: linear-gradient(#f2f1f1, #6d5b66);
+    background-color: #6d5b66; }
+  .content__about_promo-link::after {
+    position: absolute;
+    content: "\2192";
+    margin-left: 5px; }
+
+.buttons-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0; }
+  .buttons-list__btn, .buttons-list__btn_opened {
+    display: inline-block;
+    margin-right: -1px;
+    padding: 0; }
+  .buttons-list__btn a {
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #4c3440;
+    border: 1px solid #b3aaaf; }
+  .buttons-list__btn_opened a {
+    background-color: #b3aaaf;
+    color: white; }

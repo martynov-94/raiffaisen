@@ -216,7 +216,6 @@ body {
 .buttons-list__btn,
 .buttons-list__btn_opened {
 	display: inline-block;
-	
 	margin-right: -1px;	
 	padding: 0;
 }

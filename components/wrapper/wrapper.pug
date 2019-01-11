@@ -1,3 +1,8 @@
-mixin wrapper()
+include ../main/main.pug
+include ../sidebar/sidebar.pug
+
+mixin wrapper(content, current_page_index)
   .wrapper
+    +main(content)
+    +sidebar(current_page_index)
   block

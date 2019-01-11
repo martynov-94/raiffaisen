@@ -1,0 +1,11 @@
+.menu {
+	&__item {
+		@extend .MAIN-MENU-ITEM;
+
+		&:active {
+			@extend .MAIN-MENU-ITEM-ACTIVE;
+		}
+	}
+
+
+}

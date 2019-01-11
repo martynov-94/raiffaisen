@@ -1,0 +1,13 @@
+.header {
+	display: flex;
+	padding: 50px;
+	align-items: flex-start;
+
+	&__tel-number {
+		@extend .HEADER-PHONE;
+	}
+
+	&__choose-lang {
+		@extend .HEADER-LANG-ITEM;
+	}
+}
