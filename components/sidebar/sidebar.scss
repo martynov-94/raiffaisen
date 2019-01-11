@@ -24,6 +24,14 @@
 
   &__footer-link {
     @extend .DOWNLOAD-PDF;
+
+    a {
+      border-bottom: 1px dotted #897b84;
+      text-decoration: none;
+      color: $TEXT-COLOR;
+      position: relative;
+      left: 25px;
+    }
   }
 
   &__footer-copyright {

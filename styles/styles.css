@@ -51,19 +51,19 @@
   font-size: 24px; }
   @media screen and (min-width: 1600px) {
     .MAIN-MENU-ITEM, .menu__item a {
-      font-size: 31.5px;
-      line-height: 36px; } }
+      font-size: 21px;
+      line-height: 24px; } }
 
 /**
  * пункт главного меню при нажатии
  */
-.MAIN-MENU-ITEM-ACTIVE, .menu__item:active {
+.MAIN-MENU-ITEM-ACTIVE, .menu__item a:active {
   font-family: "Futura New Demi";
   font-size: 24px; }
   @media screen and (min-width: 1600px) {
-    .MAIN-MENU-ITEM-ACTIVE, .menu__item:active {
-      font-size: 31.5px;
-      line-height: 36px; } }
+    .MAIN-MENU-ITEM-ACTIVE, .menu__item a:active {
+      font-size: 21px;
+      line-height: 24px; } }
 
 /**
  * текст внутри кнопки банка
@@ -123,9 +123,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 860px;
   margin: 0;
-  background-color: #f9f9f8;
-  height: 860px; }
+  background-color: #f9f9f8; }
 
 .main {
   display: -webkit-box;
@@ -171,6 +171,12 @@
     margin: 0; }
   .sidebar__buttons {
     margin-top: 10px; }
+  .sidebar__footer-link a {
+    border-bottom: 1px dotted #897b84;
+    text-decoration: none;
+    color: #4c3440;
+    position: relative;
+    left: 25px; }
 
 .header {
   display: -webkit-box;
@@ -213,9 +219,19 @@
   text-decoration: none;
   position: relative;
   z-index: 2; }
-
-.menu__item:active {
-  opacity: 0.5; }
+  .menu__item a:hover {
+    color: rgba(76, 52, 64, 0.5); }
+  .menu__item a:active {
+    opacity: 0.5; }
+    .menu__item a:active::before {
+      position: absolute;
+      content: "";
+      bottom: -1px;
+      left: -5%;
+      width: 110%;
+      height: 10px;
+      background-color: rgba(215, 211, 213, 0.5);
+      z-index: 1; }
 
 .buttons-list {
   list-style: none;
