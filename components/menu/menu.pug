@@ -1,0 +1,46 @@
+-
+  var menu_items = [{
+      title: "Сохранить и преумножить",
+      link: "index.html"
+    },{
+      title: "Получить финансирование",
+      link: "get_financing.html"
+    },{
+      title: "Решения для вашего бизнеса",
+      link: "#"
+    },{
+      title: "Расчетно-кассовое обслуживание",
+      link: "#"
+    },{
+      title: "Решения для вашей семьи/Консалтинг",
+      link: "#"
+    },{
+      title: "",
+      link: ""
+    },{
+      title: "О нас",
+      link: "#"
+    }, {
+      title: "Контактная информация",
+      link: "#"
+    }
+  ]
+
+mixin menu(active_index)
+  nav.sidebar__menu.menu
+
+    each item, index in menu_items  
+      
+      if item.title==""
+        li(class= "menu__item_break-line")
+        - continue
+
+      - var class_name= "menu__item"
+
+      if index==active_index
+        - class_name+= " menu__item_opened"
+
+      li(class= class_name)
+        a(href!=item.link)= item.title
+      
+

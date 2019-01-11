@@ -183,7 +183,8 @@ body {
 	z-index: 2;
 }
 
-.menu__item a:active {
+.menu__item a:active,
+.menu__item_opened a {
 	color: #9f9298;
 	font-weight: bold;
 }
