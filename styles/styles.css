@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/**
+ * телефон в хедере
+ */
+.HEADER-PHONE {
+  font-family: "Futura New Light";
+  font-size: 24px; }
+  @media screen and (min-width: 1600px) {
+    .HEADER-PHONE {
+      font-size: 32px;
+      line-height: 27px; } }
+
+/**
+ * выбор языка в хедере
+ */
+.HEADER-LANG-ITEM {
+  font-family: "Futura New Book";
+  font-size: 18px; }
+  @media screen and (min-width: 1600px) {
+    .HEADER-LANG-ITEM {
+      font-size: 21px;
+      line-height: 27px; } }
+
+/**
+ * заголовок контента
+ */
+.CONTENT-TITLE, .content__title {
+  font-family: "Futura New Light";
+  font-size: 36px; }
+  @media screen and (min-width: 1600px) {
+    .CONTENT-TITLE, .content__title {
+      font-size: 48px;
+      line-height: 54px; } }
+
+/**
+ * основной контент
+ */
+.CONTENT-TEXT {
+  font-family: "Futura New Light";
+  font-size: 15px; }
+  @media screen and (min-width: 1600px) {
+    .CONTENT-TEXT {
+      font-size: 18px;
+      line-height: 27px; } }
+
+/**
+ * пункт главного меню
+ */
+.MAIN-MENU-ITEM {
+  font-family: "Futura New Book";
+  font-size: 24px; }
+  @media screen and (min-width: 1600px) {
+    .MAIN-MENU-ITEM {
+      font-size: 31.5px;
+      line-height: 36px; } }
+
+/**
+ * пункт главного меню при нажатии
+ */
+.MAIN-MENU-ITEM-ACTIVE {
+  font-family: "Futura New Demi";
+  font-size: 24px; }
+  @media screen and (min-width: 1600px) {
+    .MAIN-MENU-ITEM-ACTIVE {
+      font-size: 31.5px;
+      line-height: 36px; } }
+
+/**
+ * текст внутри кнопки банка
+ */
+.BANK-BUTTON {
+  font-family: "Futura New Light";
+  font-size: 18px; }
+  @media screen and (min-width: 1600px) {
+    .BANK-BUTTON {
+      font-size: 21px;
+      line-height: 27px; } }
+
+/**
+ * скачивание pdf-файла
+ */
+.DOWNLOAD-PDF {
+  font-family: "Futura New Light";
+  font-size: 12px; }
+  @media screen and (min-width: 1600px) {
+    .DOWNLOAD-PDF {
+      font-size: 14px;
+      line-height: 27px; } }
+
+/**
+ * копирайт
+ */
+.COPYRIGHT {
+  font-family: "Futura New Light";
+  font-size: 10px; }
+  @media screen and (min-width: 1600px) {
+    .COPYRIGHT {
+      font-size: 12px;
+      line-height: 27px; } }
+
+@font-face {
+  font-family: 'Futura New Book';
+  src: url("../fonts/FuturaNewBook-Reg.eot");
+  src: url("../fonts/FuturaNewBook-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaNewBook-Reg.woff2") format("woff2"), url("../fonts/FuturaNewBook-Reg.woff") format("woff"), url("../fonts/FuturaNewBook-Reg.ttf") format("truetype"), url("../fonts/FuturaNewBook-Reg.svg#FuturaNewBook-Reg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Futura New Demi';
+  src: url("../fonts/FuturaNewDemi-Reg.eot");
+  src: url("../fonts/FuturaNewDemi-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaNewDemi-Reg.woff2") format("woff2"), url("../fonts/FuturaNewDemi-Reg.woff") format("woff"), url("../fonts/FuturaNewDemi-Reg.ttf") format("truetype"), url("../fonts/FuturaNewDemi-Reg.svg#FuturaNewDemi-Reg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Futura New Light';
+  src: url("../fonts/FuturaNewLight-Reg.eot");
+  src: url("../fonts/FuturaNewLight-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaNewLight-Reg.woff2") format("woff2"), url("../fonts/FuturaNewLight-Reg.woff") format("woff"), url("../fonts/FuturaNewLight-Reg.ttf") format("truetype"), url("../fonts/FuturaNewLight-Reg.svg#FuturaNewLight-Reg") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+.content__title {
+  color: #4c3440; }

@@ -1,0 +1,11 @@
+@mixin test($w: $width, $color: $color) {
+	width: $w;
+	background-color: $color;
+}
+
+$color: #fff;
+$width: 24px;
+
+body {
+	@include test();
+}

@@ -1,0 +1,10 @@
+.content{
+
+	// font-size: 20px;
+
+	&__title{
+		@extend .CONTENT-TITLE;
+		color: $COLOR-TEXT;
+	}
+
+}

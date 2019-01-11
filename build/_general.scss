@@ -1,0 +1,109 @@
+$FuturaNewLight: 'Futura New Light';
+$FuturaNewBook: 'Futura New Book';
+$FuturaNewDemi: 'Futura New Demi';
+
+$DESKTOP_1600: 1600px;
+
+@mixin DESKTOP_1600() {
+  @media screen and (min-width: $DESKTOP_1600) { @content; }
+}
+
+/**
+ * телефон в хедере
+ */
+.HEADER-PHONE {
+  font-family: $FuturaNewLight;
+  font-size: 24px;
+  @include DESKTOP_1600() {
+    font-size: 32px;
+    line-height: 27px;
+  }
+}
+/**
+ * выбор языка в хедере
+ */
+.HEADER-LANG-ITEM {
+  font-family: $FuturaNewBook;
+  font-size: 18px;
+  @include DESKTOP_1600() {
+    font-size: 21px;
+    line-height: 27px;
+  }
+}
+/**
+ * заголовок контента
+ */
+.CONTENT-TITLE {
+  font-family: $FuturaNewLight;
+  font-size: 36px;
+  @include DESKTOP_1600() {
+    font-size: 48px;
+    line-height: 54px;
+  }
+}
+/**
+ * основной контент
+ */
+.CONTENT-TEXT {
+  font-family: $FuturaNewLight;
+  font-size: 15px;
+  @include DESKTOP_1600() {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+/**
+ * пункт главного меню
+ */
+.MAIN-MENU-ITEM {
+  font-family: $FuturaNewBook;
+  font-size: 24px;
+  @include DESKTOP_1600() {
+    font-size: 31.5px;
+    line-height: 36px;
+  }
+}
+/**
+ * пункт главного меню при нажатии
+ */
+.MAIN-MENU-ITEM-ACTIVE {
+  font-family: $FuturaNewDemi;
+  font-size: 24px;
+  @include DESKTOP_1600() {
+    font-size: 31.5px;
+    line-height: 36px;
+  }
+}
+/**
+ * текст внутри кнопки банка
+ */
+.BANK-BUTTON {
+  font-family: $FuturaNewLight;
+  font-size: 18px;
+  @include DESKTOP_1600() {
+    font-size: 21px;
+    line-height: 27px;
+  }
+}
+/**
+ * скачивание pdf-файла
+ */
+.DOWNLOAD-PDF {
+  font-family: $FuturaNewLight;
+  font-size: 12px;
+  @include DESKTOP_1600() {
+    font-size: 14px;
+    line-height: 27px;
+  }
+}
+/**
+ * копирайт
+ */
+.COPYRIGHT {
+  font-family: $FuturaNewLight;
+  font-size: 10px;
+  @include DESKTOP_1600() {
+    font-size: 12px;
+    line-height: 27px;
+  }
+}
