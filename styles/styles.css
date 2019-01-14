@@ -311,7 +311,6 @@ body {
     color: #4c3440; }
   .content__about {
     width: 50%;
-    height: 440px;
     padding: 0px;
     -webkit-column-count: 2;
     column-count: 2;
