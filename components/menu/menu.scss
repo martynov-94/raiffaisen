@@ -25,6 +25,33 @@
       &:hover {
         color: $TEXT-HOVERED-COLOR;
       }
+
+      @media (max-height: 800px) {
+        font-size: 1.5vw;
+        line-height: 1;
+      }
+
+      @media (max-height: 600px) {
+        font-size: 1.3vw;
+        line-height: 0.75;
+      }
+
+      @media (max-height: 400px) {
+        font-size: 1.1vw;
+        line-height: 0.5;
+      }
+    }
+    
+    @media (max-height: 800px) {
+        margin-bottom: 25px;
+    }
+
+    @media (max-height: 600px) {
+        margin-bottom: 20px;
+    }
+
+    @media (max-height: 400px) {
+        margin-bottom: 10px;
     }
 
     &_opened a {
