@@ -7,14 +7,10 @@
   &__bank-picture {
     float: left;
     margin-right: 20px;
-    // margin-top: -40px;
-    // margin-top: auto;
   }
 
   &__title {
     @extend .CONTENT-TITLE;
-
-    // margin-top: 0;
 
     font-weight: normal;
     color: $TEXT-COLOR;
