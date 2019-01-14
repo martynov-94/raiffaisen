@@ -255,20 +255,8 @@ body {
     padding: 0;
     text-transform: uppercase;
     list-style: none; }
-    .header__selected-lang::after {
-      position: absolute;
-      top: 3px;
-      left: 25px;
-      opacity: 1;
-      display: block;
-      padding: 3px;
-      border: solid rgba(76, 52, 64, 0.5);
-      border-width: 0 2px 2px 0;
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
-      content: ""; }
     .header__selected-lang:hover {
+      cursor: pointer;
       color: transparent; }
     .header__selected-lang:hover .select-list {
       display: block;
@@ -278,6 +266,31 @@ body {
       -o-transition: opacity 0.1s ease;
       transition: opacity 0.1s ease;
       opacity: 0; }
+    .header__selected-lang .clicking-area {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      display: inline-block;
+      width: 35px;
+      height: 20px;
+      margin-left: 20px; }
+      .header__selected-lang .clicking-area .opening-arrow {
+        position: absolute;
+        top: 2px;
+        right: 5px;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border: solid rgba(76, 52, 64, 0.5);
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg); }
+    .header__selected-lang:hover .opening-arrow {
+      margin-top: 3px;
+      -webkit-transform: rotate(225deg);
+      -ms-transform: rotate(225deg);
+      transform: rotate(225deg); }
 
 .select-list {
   position: absolute;
@@ -361,7 +374,7 @@ body {
         line-height: 0.75; } }
     @media (max-height: 400px) {
       .menu__item a {
-        font-size: 1.1vw;
+        font-size: 1.2vw;
         line-height: 0.5; } }
   @media (max-height: 800px) {
     .menu__item {
