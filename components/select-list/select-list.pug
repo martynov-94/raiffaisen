@@ -1,6 +1,15 @@
+- 
+  var langs = ["Ru", "En", "De"];
+  var selected_lang_index = 0;
+
 mixin select-list()
   ul.header__choose-lang.select-list
-    li.select-list__item.select-list__item_chosen Ru
-    li.select-list__item En
-    li.select-list__item De
+
+    each item, index in langs
+      - var class_name = "select-list__item"
+
+      if index==selected_lang_index 
+        - class_name+= " select-list__item_chosen"
+
+      li(class= class_name)= item
   block

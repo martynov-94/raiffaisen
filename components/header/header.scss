@@ -2,8 +2,6 @@
 	display: flex;
 	padding: 50px;
 
-	align-items: flex-start;
-
 	&__site-logo {
 		margin-right: auto;
 	}
@@ -11,15 +9,68 @@
 	&__tel-number {
 		@extend .HEADER-PHONE;
 
+		position: relative;
+
 		padding: 0;
+
+		&::after {
+	    position: absolute;
+	    top: -5px;
+	    right: -30px;
+	    
+	    display: block;
+	    content: "";
+	    width: 2px;
+	    height: 38px;
+	    
+	    background-image: linear-gradient(to right, #dcd9da, #c7c0c3);
+  	}
 	}
 
-	&__choose-lang {
-		margin: 0;
-		margin-right: -15px;
-		margin-left: 60px;
+	&__selected-lang {
+		@extend .HEADER-LANG-ITEM;
+
+		position: relative;
+
+		height: 18px;
+		margin: 5px -5px 0 60px;
 		padding: 0;
 
+		text-transform: uppercase;	
 		list-style: none;
+
+		
+
+		&::after {
+			 position: absolute;
+	     top: 3px;
+	     left: 25px;
+
+	     opacity: 1;
+
+	     display: block;
+	     padding: 3px;
+	    
+	     border: solid rgba(76, 52, 64, 0.5);
+	     border-width: 0 2px 2px 0;
+	    
+	     transform: rotate(45deg);
+
+	     content: "";
+		}
+
+		&:hover {
+			color: rgba(0, 0, 0, 0);
+		}
+
+		&:hover .select-list {
+			display: block;
+			cursor: pointer;
+		}
+
+		&:hover::after {
+			transition: opacity 0.1s ease;
+			opacity: 0;
+		}
 	}
 }

@@ -1,18 +1,18 @@
 .content {
-  display: flex;
-  height: 100%;
-
-  flex-flow: column wrap;
-  align-items: flex-start;
-
-  overflow: hidden;
+  margin-top: auto;
+  margin-bottom: auto;
 
   &__bank-picture {
-    flex-basis: 100%;
+    float: left;
+
+    // margin-top: -40px;
+    // margin-top: auto;
   }
 
   &__title {
     @extend .CONTENT-TITLE;
+
+    // margin-top: 0;
 
     font-weight: normal;
     color: $TEXT-COLOR;
@@ -22,9 +22,8 @@
     @extend .CONTENT-TEXT;
 
     width: 50%;
-    margin-right: 330px;
+    height: 440px;
     padding: 0px;
-
     column-count: 2;
     column-gap: 50px;
 

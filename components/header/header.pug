@@ -1,3 +1,5 @@
+include ../select-list/select-list.pug
+
 mixin header(content)
   header.header
     .header__site-logo
@@ -5,5 +7,6 @@ mixin header(content)
         img(src= "img/logo.svg" width="242")
     .header__tel-number +7 (495) 662 76 77
     
-    +select-list()
+    .header__selected-lang= langs[selected_lang_index]
+      +select-list()
   block

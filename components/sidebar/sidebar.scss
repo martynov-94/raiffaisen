@@ -2,12 +2,12 @@
   display: flex;
   min-width: 292px;
   margin: 0;
-
-  align-self: stretch;
+  height: 100%;
 
   background-color: #f2f1f1;
 
   flex-direction: column;
+  flex-wrap: wrap-reverse;
 
   &__main {
     display: flex;
@@ -30,10 +30,11 @@
 
   &__footer {
     display: flex;
+    margin-top: auto;
     
-    background-color: #f9f9f8;
+    background-color: $FOOTER-COLOR;
 
-    flex-basis: 130px;
+    flex-basis: 160px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
