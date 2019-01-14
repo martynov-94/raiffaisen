@@ -1,7 +1,10 @@
 .menu {
-  
   &__item {
+    break-word: nowrap;
+    width: 80%;
 
+    // margin-left: auto;
+    // margin-right: auto;
     margin-bottom: 26px;
 
     &_break-line {
@@ -9,13 +12,12 @@
       height: 1px;
       margin-top: 32px;
       margin-bottom: 32px;
-      
+      // margin-left: 50px;
       background-color: #d7d3d5;
     }
 
     a {
       @extend .MAIN-MENU-ITEM;
-
       position: relative;
 
       color: $TEXT-COLOR;
