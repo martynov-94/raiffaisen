@@ -1,0 +1,23 @@
+include build/project.pug
+
+-
+  var current_page_index = 2;
+
+  var content = {
+    title: "Решения для вашего бизнеса",
+    image_url: "img/bank.png",
+    image_width: 403,
+    image_height: 550,
+    text: [
+      "Decision making. It’s the bread and butter of managers and executives, who make about three billion decisions each year. Indeed, Bain researches found that decision effectiveness is 95% correlated with financial performance.",
+
+      "Despite this, very few of us keep track of the decisions we make and how they turn out. Think of it: you track sales, you track web clicks, you track your Starbucks receipts. But you don’t track the most important thing you do at work - the decisions you make.", 
+    
+      "As a result, most organizations are not very good at decision making. It's no surprise that our study of 500 managers and executives found 98% fail to apply best practices when making decisions.",
+
+      "If decision making is so important, why are we so in the dark?"
+    ],
+    promo_text: "Узнать об инвестиционных решениях Friedrich Wilhelm Raiffeisen <a class='content__about_promo-link' href='#'>в Вене</a>"
+  }
+
++page(content, current_page_index)

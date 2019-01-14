@@ -9,22 +9,12 @@ include build/project.pug
     image_width: 403,
     image_height: 550,
     text: [
-      "!Обслуживание в московском офисе Friedrich Wilhelm Raiffeisen сочетает в себе преимущества индивидуального клиентского сервиса в Москве с инвестиционными решениями, разработанными в центральном офисе Группы Райффайзен в Вене.",
-      "Каждый клиент российского офиса Friedrich Wilhelm Raiffeisen получает персонального менеджера в Москве, который осуществляет открытие  и обслуживание инвестиционных счетов в Австрии, а также обеспечивает доступ к международному рынку ценных бумаг через платформы в России и за рубежом.",
-      "Специалисты Friedrich Wilhelm Raiffeisen в Австрии разрабатывают индивидуальные стратегии доверительного управления активами и осуществляют формирование индивидуального портфеля, отвечающего инвестиционным потребностям клиента.",
-      "Friedrich Wilhelm Raiffeisen оказывает брокерские, консультационные и аналитические услуги, предоставляет гибкие депозитные предложения и обслуживает счета в 11 валютах."
+      "A decade ago, banks were the first place you’d go to if you wanted a business loan. But after the 2008 recession, things changed. Banks started tightening access to credit and adding stricter qualification criteria for loans. As a result, very few small business owners were able to get the funding they needed from banks.",
+      "Fortunately, there’s been a resurgence in bank lending to small businesses. Large banks now approve a quarter of small business loan applications, and regional and community banks approve nearly one half of small business loan applications.",
+      "Although things are looking up for business owners who want to apply for bank loans, these stats indicate that your choice of bank matters. Some banks have a proven reputation for helping small businesses and are more committed to working with small businesses.",
+      "We rank the best banks for business loans and tell you what you need to qualify and apply."
     ],
     promo_text: "Узнать об инвестиционных решениях Friedrich Wilhelm Raiffeisen <a class='content__about_promo-link' href='#'>в Вене</a>"
   }
 
-doctype html
-html(lang="ru")
-  head
-    link(rel='stylesheet', href='style.css')
-  body
-    .wrapper
-      .main
-        +header()
-        +content( content )
-
-      +sidebar( current_page_index )
++page(content, current_page_index)

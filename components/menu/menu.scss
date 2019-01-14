@@ -1,5 +1,7 @@
 .menu {
+  
   &__item {
+
     margin-bottom: 26px;
 
     &_break-line {
@@ -23,30 +25,26 @@
       &:hover {
         color: $TEXT-HOVERED-COLOR;
       }
-
-      &:active {
-        @extend .MAIN-MENU-ITEM-ACTIVE;
-
-        &::before {
-          position: absolute;
-          bottom: -1px;
-          left: -5%;
-
-          width: 110%;
-          height: 10px;
-
-          background-color: rgba(215, 211, 213, 0.5);
-
-          content: "";
-          z-index: 1;
-        }
-      }
     }
 
     &_opened a {
       @extend .MAIN-MENU-ITEM-ACTIVE;
 
       color: #9f9298;
+
+      &::before {
+          position: absolute;
+          bottom: 0;
+          left: -5%;
+
+          width: 110%;
+          height: 10px;
+
+          background-color: rgba(108, 91, 101, 0.2);
+
+          content: "";
+          z-index: 1;
+        }
     } 
   }
 }

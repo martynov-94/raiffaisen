@@ -20,12 +20,18 @@
 
   &__about {
     @extend .CONTENT-TEXT;
+
     width: 50%;
     margin-right: 330px;
-    padding: 0;
+    padding: 0px;
 
     column-count: 2;
     column-gap: 50px;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
     
     &_promo-text {
       color: $PROMO-TEXT-COLOR;
