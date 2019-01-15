@@ -2,7 +2,7 @@
   margin-top: auto;
   margin-bottom: auto;
 
-  padding-bottom: 150px;
+  // padding-bottom: 150px;
 
 
   &__bank-picture {
@@ -27,6 +27,8 @@
     @extend .CONTENT-TITLE;
     font-weight: normal;
     color: $TEXT-COLOR;
+
+    // letter-spacing: 1.15px;
 
     @media (max-width: 768px) {
       text-align: center;

@@ -1,6 +1,9 @@
 .header {
 	display: flex;
 	padding: 50px;
+	padding-top: 51px;
+	padding-right: 45px;
+	padding-bottom: 0;
 
 	&__site-logo {
 		margin-right: auto;
@@ -16,7 +19,7 @@
 		&::after {
 	    position: absolute;
 	    top: -5px;
-	    right: -30px;
+	    right: -31px;
 	    
 	    display: block;
 	    content: "";
@@ -33,8 +36,9 @@
 		position: relative;
 
 		height: 18px;
-		margin: 5px -5px 0 60px;
 		padding: 0;
+		margin-top: 5px;
+		margin-left: 65px;
 
 		text-transform: uppercase;	
 		list-style: none;
@@ -67,11 +71,11 @@
 			.opening-arrow {
 				position: absolute;
 				top: 2px;
-				right: 5px;
+				right: 3px;
 
 				display: inline-block;
-				width: 6px;
-				height: 6px;
+				width: 8px;
+				height: 8px;
 
 				border: solid rgba(76, 52, 64, 0.5);
 		    border-width: 0 2px 2px 0;
