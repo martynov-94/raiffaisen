@@ -73,20 +73,23 @@
 
       color: $TEXT-COLOR;
 
-      border-bottom: 1px dotted #897b84;
+      background-image: linear-gradient(to right, #84757e 40%, rgba(255, 255, 255, 0) 20%);
+      background-position: bottom;
+      background-size: 3px 1px;
+      background-repeat: repeat-x;
 
       text-decoration: none;
 
       &:hover {
         color: rgba(76, 52, 64, 0.5);
 
-        border-bottom: none;
+        background-image: none;
       }
 
       &::before {
         position: absolute;
         top: -10px;
-        left: -50px;
+        left: -56px;
         z-index: 10;
 
         display: block;
@@ -104,7 +107,8 @@
   &__footer-copyright {
     @extend .COPYRIGHT;
     
-    margin-bottom: 20px;
+    margin-top: -5px;
+    margin-bottom: 24px;
     padding: 12px;
     
     color: rgba(0, 0, 0, 0.5);    

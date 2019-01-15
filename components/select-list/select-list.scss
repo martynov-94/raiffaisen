@@ -1,16 +1,18 @@
 .select-list {
   position: absolute;
-  top: -16px;
-  left: -40px;
+  top: -14px;
+  left: 0px;
 
   display: none;
+  width: 40px;
+  padding: 0;
 
+  outline: 10px solid #fdfdfd;
   list-style: none;
 
   &__item {
     @extend .HEADER-LANG-ITEM;
 
-    line-height: 1.8;
     color: $TEXT-COLOR;
 
     text-transform: uppercase;

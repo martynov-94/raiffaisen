@@ -9,7 +9,7 @@
       width: 65px;
       height: 1px;
       margin-top: 36px;
-      margin-bottom: 36px;
+      margin-bottom: 34px;
 
       background-color: #d7d3d5;
     }
@@ -26,14 +26,13 @@
         color: $TEXT-HOVERED-COLOR;
       }
 
-
       @media (max-height: 860px) {
         font-size: 1.3vw;
         line-height: 0.75;
       }
 
-      @media (max-height: 600px) {
-        font-size: 1.2vw;
+      @media (max-height: 845px) {
+        font-size: 1.1vw;
         line-height: 0.5;
       }
     }

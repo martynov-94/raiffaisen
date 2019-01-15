@@ -26,8 +26,8 @@ $DESKTOP_1600: 1600px;
   font-family: $FuturaNewBook;
   font-size: 12px;
   @include DESKTOP_1600() {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 /**
