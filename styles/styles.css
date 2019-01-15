@@ -157,6 +157,7 @@ body {
   height: auto;
   min-height: 100%;
   margin: 0;
+  margin-left: 20px;
   background-color: #f2f1f1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -319,9 +320,21 @@ body {
   .content__bank-picture {
     float: left;
     margin-right: 20px; }
+    @media (max-width: 1200px) {
+      .content__bank-picture {
+        width: 250px; } }
+    @media (max-width: 768px) {
+      .content__bank-picture {
+        width: 100%; } }
+    .content__bank-picture img {
+      width: 100%;
+      height: auto; }
   .content__title {
     font-weight: normal;
     color: #4c3440; }
+    @media (max-width: 768px) {
+      .content__title {
+        text-align: center; } }
   .content__about {
     width: 50%;
     padding: 0px;
@@ -330,6 +343,10 @@ body {
     -webkit-column-gap: 50px;
     column-gap: 50px;
     margin: 0; }
+    @media (max-width: 768px) {
+      .content__about {
+        margin-left: auto;
+        margin-right: auto; } }
     .content__about p {
       margin-top: 0;
       margin-bottom: 30px; }
